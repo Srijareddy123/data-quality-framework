@@ -48,9 +48,7 @@ flowchart LR
 No keys needed.
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate   # Python 3.12 or 3.13
-pip install -r requirements-dev.txt
-make demo        # 9 loads, 4 with defects, 5 findings, SQLite audit log, a few seconds
+make demo        # first run creates .venv (Python 3.12 or 3.13 on PATH) and installs the requirements; 9 loads, 4 with defects, 5 findings, SQLite audit log, a few seconds
 make api         # then open http://localhost:8010/health and /alerts
 ```
 
